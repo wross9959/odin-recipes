@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+  
+}
+
+
+:root{
+    --primary-color: #F10F0F;
+    --secondary-color: #333;
+    --light-color: #f4f4f4;
+    --dark-color: #28282B;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --lightgrey-color: #505050;
+    --selectLight-color: #707070;
+    --main-color: #6EACDA;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+.header-recipe {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #00000000;
+
+}
+.header-recipe h1{
+    background-color: #00000000;
+
+}
+
+b {
+    background-color: #00000000;
+    color: #28282B;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1% auto;
+    padding: 30px;
+    width: 80%;
+    background-color: var(--light-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color);
+    background-color: #00000000;
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+
+/* Button */
+
+button {
+    padding: 13px 20px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    opacity: 0.8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tiles {
+    display: grid;
+    margin: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tile {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.tile h2 {
+    background-color: var(--secondary-color);
+}
+
+.tile p {
+    background-color: var(--secondary-color);
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    background-color: var(--dark-color);
+}
+
+
+
+
+
+.old-paper {
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png'), #f3eacb;
+    background-size: cover;
+    color: #5a4632;
+    
+    font-family: 'Georgia', serif;
+    padding: 20px;
+    border: 1px solid #d1bfa7;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 60%;
+    margin: 20px auto;
+    line-height: 1.6;
+    border-radius: 8px;
+}
+
+.old-paper h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    text-align: center;
+    color: #4a2f1e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #00000000;
+}
+.old-paper p {
+    text-indent: 20px;
+    color: #28282B;
+    background-color: #00000000;
+}
+.old-paper ul {
+    text-indent: 20px;
+    color: #28282B;
+    background-color: #00000000;
+}
+.old-paper li {
+    text-indent: 20px;
+    color: #28282B;
+    background-color: #00000000;
+}
+
+.old-paper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.1) 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.old-paper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.return button {
+    color: #4a2f1e;
+    background-color: #17a2b8;
+}
